@@ -1,0 +1,138 @@
+<style>
+
+/*
+#collapsibleNavbar{padding-top:1rem;padding-bottom:1rem;font-weight:900;font-family:Montserrat}
+#collapsibleNavbar .navbar-nav li.nav-item a.nav-link{color:#dc6027}
+#collapsibleNavbar .navbar-nav li.nav-item a.nav-link:hover{color:#9d4319}
+#collapsibleNavbar .navbar-nav li.nav-item a.nav-link:active,
+#collapsibleNavbar .navbar-nav li.nav-item a.nav-link:focus{color:#9d4319}
+#collapsibleNavbar .navbar-nav li.nav-item a.nav-link.active{color:#9d4319}
+#collapsibleNavbar .navbar-toggler{font-size:100%;padding:0.8rem} @media (min-width:992px) {#collapsibleNavbar{padding-top:1.5rem;padding-bottom:1.5rem;-webkit-transition:padding-top .3s,padding-bottom .3s;-moz-transition:padding-top .3s,padding-bottom .3s;transition:padding-top .3s,padding-bottom .3s,
+#collapsibleNavbar .navbar-brand{font-size:2em;-webkit-transition:font-size .3s;-moz-transition:font-size .3s;transition:font-size .3s}
+#collapsibleNavbar .navbar-nav{margin-top:0}
+#collapsibleNavbar .navbar-nav>li.nav-item>a.nav-link.active{color:#9d4319;background:#FFF}
+#collapsibleNavbar .navbar-nav>li.nav-item>a.nav-link.active:active,
+#collapsibleNavbar .navbar-nav>li.nav-item>a.nav-link.active:focus,
+#collapsibleNavbar .navbar-nav>li.nav-item>a.nav-link.active:hover{color:#9d4319;background:#FFF}
+#collapsibleNavbar .navbar-shrink{padding-top:.5rem;padding-bottom:.5rem}
+#collapsibleNavbar .navbar-shrink .navbar-brand{font-size:1.5em}}*/
+
+#collapsibleNavbar{padding-top:1rem;padding-bottom:1rem;font-weight:700;font-family:Montserrat}
+#collapsibleNavbar .navbar-brand{color:#fff}
+#collapsibleNavbar .navbar-nav{margin-top:1rem;letter-spacing:.0625rem}
+#collapsibleNavbar .navbar-nav li.nav-item a.nav-link{color:#DC6027}
+#collapsibleNavbar .navbar-nav li.nav-item a.nav-link:hover{color:#9d4319}
+#collapsibleNavbar .navbar-nav li.nav-item a.nav-link:active,
+#collapsibleNavbar .navbar-nav li.nav-item a.nav-link:focus{color:#9d4319}
+#collapsibleNavbar .navbar-nav li.nav-item a.nav-link.active{color:#9d4319}
+#collapsibleNavbar .navbar-toggler{font-size:80%;padding:.8rem}
+@media (min-width:992px){#collapsibleNavbar{padding-top:1.5rem;padding-bottom:1.5rem;-webkit-transition:padding-top .3s,padding-bottom .3s;-moz-transition:padding-top .3s,padding-bottom .3s;transition:padding-top .3s,padding-bottom .3s}
+#collapsibleNavbar .navbar-brand{font-size:2em;-webkit-transition:font-size .3s;-moz-transition:font-size .3s;transition:font-size .3s}
+#collapsibleNavbar .navbar-nav{margin-top:0}
+#collapsibleNavbar .navbar-nav>li.nav-item>a.nav-link.active{color:#9d4319;background:#FFF}
+#collapsibleNavbar .navbar-nav>li.nav-item>a.nav-link.active:active,
+#collapsibleNavbar .navbar-nav>li.nav-item>a.nav-link.active:focus,
+#collapsibleNavbar .navbar-nav>li.nav-item>a.nav-link.active:hover{color:#9d4319;background:#FFF}
+#collapsibleNavbar.navbar-shrink{padding-top:.5rem;padding-bottom:.5rem}
+#collapsibleNavbar.navbar-shrink .navbar-brand{font-size:1.5em}}
+
+.showcase .showcase-text{padding:3rem}.showcase .showcase-img{min-height:30rem;background-size:cover}
+@media (min-width:768px){.showcase .showcase-text{padding:7rem}}.features-icons{padding-top:7rem;padding-bottom:7rem}
+
+.navbar-nav a{
+      font-size: 1.5em !important;
+
+       }
+.navbar-nav li{
+padding-right:15px;
+}
+
+.btn {
+  background-color: #DC6027;
+  color: #FFF;
+  border: 2px solid #FFF;
+  margin: 10px
+  }
+.bg-light {
+  background-color:#ccd4ed;
+}
+
+  body{font-family:Lato,'Helvetica Neue',Helvetica,Arial,sans-serif
+  }
+  h1,h2,h3,h4,h5,h6 {font-family:Lato,'Helvetica Neue',Helvetica,Arial,sans-serif;font-weight:700
+  }
+
+  header.masthead{background:url(../img/slider2.jpg) no-repeat center center;-webkit-background-size:cover;-moz-background-size:;
+    -o-background-size:cover;background-size:cover;padding-top:8rem;padding-bottom:8rem}
+  header.masthead h1{font-size:3rem;line-height:3rem}
+  header.masthead h2{font-size:1.3rem;font-family:Lato}
+  @media (min-width:992px){header.masthead{padding-top:calc(6rem + 106px);padding-bottom:6rem}
+  header.masthead h1{font-size:4.75em;line-height:4rem}
+  header.masthead h2{font-size:1.75em}}
+
+  .testimonials{padding-top:7rem;padding-bottom:7rem}
+  .testimonials .testimonial-item{max-width:18rem}
+  .testimonials
+  .testimonial-item img{max-width:8rem;box-shadow:0 5px 5px 0 #adb5bd}
+  .call-to-action{position:relative;background-color:#DC6027; no-repeat center center;-webkit-background-size:cover;-moz-background-size:cover;-o-background-size:cover;background-size:cover;padding-top:7rem;padding-bottom:7rem}
+  .call-to-action .overlay{position:absolute;background-color:#212529;height:100%;width:100%;top:0;left:0;opacity:.3}
+
+.bg-image-full {
+    background: no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+  }
+
+  .bg-image-parallax {
+      background: no-repeat center center fixed;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      background-size: cover;
+      -o-background-size: cover;
+      opacity:0.9;
+    }
+
+footer{
+  padding-top:5rem;
+  padding-bottom:5rem;
+  background-color:#262626;
+  color:#fff}
+
+.copyright{
+  background-color:#000000;
+  }
+
+  a{
+    color:#dc6027;
+    }
+  a:active,
+  a:focus,
+  a:hover{
+    color:#9d4319;
+    text-decoration:none;
+  }
+.btn{border-width:2px}
+.bg-primary{background-color:#f8dfd4!important}
+.bg-secondary{background-color:#6d7c8b!important}
+.text-primary{color:#18bc9c!important}
+.text-secondary{color:#6d7c8b !important}
+.btn-primary{background-color:#18bc9c;border-color:#18bc9c}
+.btn-primary:active,.btn-primary:focus,.btn-primary:hover{background-color:#128f76;border-color:#128f76}
+.btn-secondary{background-color:#6d7c8b;border-color:#6d7c8b}
+.btn-secondary:active,
+.btn-secondary:focus,
+.btn-secondary:hover{background-color:#1a252f;border-color:#1a252f}
+
+.fa{
+  font-size:40px;
+  color: #FFF;
+}
+.fa:active,
+.fa:focus,
+.fa:hover{
+  color:#dc6027;
+  text-decoration:none;
+
+</style>
