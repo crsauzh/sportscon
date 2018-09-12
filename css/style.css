@@ -135,4 +135,10 @@ footer{
   color:#dc6027;
   text-decoration:none;
 
+.vcenter {
+   display: inline-block;
+   vertical-align: middle;
+   float: none;
+}
+
 </style>
