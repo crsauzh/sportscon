@@ -766,7 +766,8 @@
                      <div class="container">
                         <h1 class="mb-5">Participants</h1>
                     <p class="lead mb-2">Please find the list of participants below. The table will be updated regularly.</p>
-
+                    <input class="form-control" id="myInput" type="text" placeholder="Search..">
+                    <br>
                     <table class="table table-striped">
                       <thead class="thead-dark">
                         <tr>
@@ -774,7 +775,7 @@
                           <th scope="col">Affiliation</th>
                         </tr>
                       </thead>
-                      <tbody>
+                      <tbody id="participants">
                         <tr>
 <td scope=""row"" class=""align-middle"">Chris Anderson</td>
  <td scope=""row"" class=""align-middle"">The University of Warwick, London School of Economics</td>
@@ -931,7 +932,18 @@
                     </table>
                          </div>
                        </section>
-
+                       <script>
+                     $(document).ready(function(){
+                       $("#myInput").on("keyup", function() {
+                         var value = $(this).val().toLowerCase();
+                         $("#participants tr").filter(function() {
+                           $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+                         });
+                       });
+                     });
+                     </script>
+                     </div>
+                     </section>
 
             <!-- Footer -->
                 <footer class="footer text-center">
