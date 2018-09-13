@@ -91,20 +91,23 @@
                </div>
              </section>
 
-             <!-- Participants -->
-                    <section class="testimonials text-center">
-                      <div class="container">
-                         <h1 class="mb-5">Participants</h1>
-                     <p class="lead mb-2">Please find the list of participants below. The table will be updated regularly.</p>
-                     <!--program in table format-->
-                     <table class="table table-striped">
-                       <thead class="thead-dark">
-                         <tr>
-                           <th scope="col">Name</th>
-                           <th scope="col">Affiliation</th>
-                         </tr>
-                       </thead>
-                       <tbody>
+   <!-- Participants -->
+    <section class="testimonials text-center">
+    <div class="container">
+   <h1 class="mb-5">Participants</h1>
+   <p class="lead mb-2">Please find the list of participants below. The table will be updated regularly.</p>
+   <div class="container">
+     <input class="form-control" id="myInput" type="text" placeholder="Search..">
+     <br>
+    <!--participants in table format-->
+    <table class="table table-striped">
+    <thead class="thead-dark">
+    <tr>
+    <th scope="col">Name</th>
+    <th scope="col">Affiliation</th>
+    </tr>
+    </thead>
+    <tbody id="participants">
                          <tr>
  <td scope=""row"" class=""align-middle"">Chris Anderson</td>
   <td scope=""row"" class=""align-middle"">The University of Warwick, London School of Economics</td>
@@ -256,12 +259,20 @@
  <td scope=""row"" class=""align-middle"">Angelo Zehr</td>
   <td scope=""row"" class=""align-middle"">Swiss Radio and Television</td>
  </tr>
-
-
-                       </tbody>
-                     </table>
-                          </div>
-                        </section>
+   </tbody>
+  </table>
+  <script>
+$(document).ready(function(){
+  $("#myInput").on("keyup", function() {
+    var value = $(this).val().toLowerCase();
+    $("#participants tr").filter(function() {
+      $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+    });
+  });
+});
+</script>
+</div>
+</section>
 
             <!-- Footer -->
                 <footer class="footer text-center">
